@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0093E9;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%);
+    font-size: 25px;
+}
+
+.todo-form {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-input {
+    font-size: 30px;
+}
+
+.second-title {
+    margin: 0;
+    margin-top: 200px;
+}
+
+.todo-input:focus {
+    outline: 2px solid orangered;
+}
+
+.todo-button {
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.todo-button:hover {
+    color: #ffe400;
+}
+
+.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: scroll;
+    height: 300px;
+    scroll-snap-type: y mandatory;
+    margin-bottom: 100px;
+}
+
+.todo-item {
+    background-color: #fff;
+    padding: 5px 8px;
+    width: 400px;
+}
+
+.todo-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.todo {
+    display: flex;
+}
+
+.todo button:not(:last-child) {
+    margin-right: 15px;
+}
+
+.todo-tet {
+    display: block;
+    flex: 1;
+}
+
+.todo-done,
+.todo-trash {
+    border: none;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.fa-check {
+    color: green;
+}
+
+.todo-trash {
+    color: red;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.todo-item.checked {
+    opacity: 0.6;
+}
+
+.todo-item.checked .todo-tet {
+    text-decoration: line-through;
+}
