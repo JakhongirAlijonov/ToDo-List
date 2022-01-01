@@ -117,4 +117,8 @@ body {
     .container {
         max-width: 450px;
     }
+    .second-title,
+    .todo-input {
+        width: 300px;
+    }
 }
